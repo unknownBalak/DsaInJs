@@ -1,0 +1,15 @@
+steps:
+1) Initialize an empty array and an variable "high" with zero.
+2) Iterate through given array in problem from 0 to length of array.
+3) Store each element of array into a variable "value" 
+4) Initialize index = "value" and then do 
+                             bribeCount[value]= 0; //Note: bribeCount= [] is an empty array
+5) Find maximum between two value (value and high) using Math.max() and store them into variable "high".
+6) if(high>value) 
+               a) Iterate through bribeCount's elements from (value+1) to bribeCount's length.
+               b) While iterate through do following  
+                            i) bribeCount[value+1]++;
+                            ii) if(bribeCount[value+1]>2) return "Too Chaotic";
+7) Repeat step 2,3,4,5,6 untill you reach arr.length
+8) sum each element of and print them
+                        
