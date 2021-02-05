@@ -1,0 +1,19 @@
+Multiple pointer : 
+     It is the most efficient way to find first pair in the sorted array whose  
+      sum equal to zero or some other number.
+    What does we do here we create two pointer first points to 0th index 
+    and 2nd points to ((arr.length)-1)th index
+    and we will keep adding both of them untill either we get result or
+     we reach at certain position where both left and right are equal. 
+ 
+ psudocode for 
+    while (left<right){
+              if(arr[right]+arr[left]===0){
+                  return [arr[left],arr[right]]
+              }else if(arr[right]+arr[left]>0){
+                  right--;
+              }else{
+                  left++;
+              }
+   
+    }

@@ -1,0 +1,13 @@
+Sliding Window approach 
+        timeComplexity =O(n);
+        spaceComplexity= o(1);
+
+Q.) Return maximum sum of elements of subarray form the array of size n & the size of subarray is k. 
+
+ Steps when we solve this type of problem: 
+    a) Sum the number from  0- to k;
+    b) create two variable max=0; tempSum= (follow step a).)
+    b) loop through k to n;
+              i) if(tempSum > max ) max = tempSum;
+              ii) tempSum = tempSum - arr[k] - a[k- subarray.length];
+    c) return max. 
